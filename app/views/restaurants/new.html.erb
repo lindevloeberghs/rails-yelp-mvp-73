@@ -1,0 +1,6 @@
+<%= simple_form_for(@restaurant) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :category, collection: Restaurant::CATEGORIES %>
+  <%= f.input :health_score %>
+  <%= f.submit %>
+<% end %>
